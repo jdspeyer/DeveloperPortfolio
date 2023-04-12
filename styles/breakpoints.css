@@ -1,0 +1,372 @@
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 1
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1085px) {
+
+    .a__technical{
+        flex-direction: column-reverse;
+    }
+
+    .a__about-skills{
+        width: 100%;
+    }
+
+    .a__skills{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .a__skills-box{
+        min-width: 200px;
+        min-height: 124px;
+    }
+
+    .a__skills-col{
+        flex-direction: row;
+    }
+
+    .a__skills-col.right-col > .a__skills-box{
+        transform: translate(0%,0%);
+    }
+
+    #blob-left-corner{
+        max-width: 800px;
+    }
+    #blob-right-corner{
+        max-width: 800px;
+    }
+    #c__portrait{
+        height:25%;
+        width: 25%;
+        transition: all 0.3s;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 2
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 900px) {
+
+    .a__spacer{
+        height: 200px;
+    }
+
+    .a__personal{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: show;
+        overflow-y: hidden;
+    }
+    .a__personal-photo{
+        margin-bottom: 120px;
+    }
+    .clipped{
+        clip-path: url(#user-space);
+        position: absolute;
+        max-width: 225px;
+        min-width: 120px;
+    }
+    .clipped_mask{
+        scale: 1.6;
+        transform: translate(28%,60%);
+    }
+    
+    .clipped_mask.background{
+        display: none;
+    }
+    
+    .a__personal-about{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 0px !important;
+    }
+
+    .a__technical{
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+
+    .a__about-skills{
+        width: 100%;
+    }
+
+    .a__skills{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .a__skills-box{
+        min-width: 280px;
+        min-height: 100px;
+    }
+
+    .a__skills-col{
+        flex-direction: column;
+    }
+
+    .a__skills-col.right-col > .a__skills-box{
+        transform: translate(0%,10%);
+    }
+
+    .c__para{
+        position: absolute;
+        right: -50px;
+    }
+
+    #blob-left-corner{
+        max-width: 700px;
+    }
+    #blob-right-corner{
+        max-width: 700px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 3
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 740px) {
+    .c__para{
+        position: absolute;
+        right: -80px;
+    }
+    #blob-left-corner{
+        max-width: 640px;
+    }
+    #blob-right-corner{
+        max-width: 640px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 4
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 700px) {
+    #jakes_nav.open{
+        width: 50vw !important;
+    }
+    #blob-left-corner{
+        max-width: 630px;
+    }
+    #blob-right-corner{
+        max-width: 630px;
+    }
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 5
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+    #jakes_nav.open{
+        width: 100vw !important;
+    }
+    .header{
+        font-size: 2.2em !important;
+    }
+    
+    .header-light{
+        font-size: 2.2em !important;
+    }
+
+    .title{
+        font-size: 0.8em !important;
+    }
+    
+    .title-light{
+        font-size: 0.8em !important;
+    }
+    
+    .title-text{
+        font-size: 0.8em !important;
+    }
+    .a__skills-box{
+        min-width: 200px;
+        min-height: 80px;
+    }
+    .a__technical-header{
+        font-size: 1.6em !important;
+        line-height: 1.1em;
+    }
+    .text{
+        font-size: 0.9em !important;
+    }
+    
+    .text-light{
+        font-size: 0.9em !important;
+    }
+    
+    .subtext{
+        font-size: 0.9em !important;
+    }
+
+    .a__technical-description{
+        font-size: 0.9em !important;
+    }
+    .a__technical-skills{
+        font-size: 0.9em !important;
+    }
+    .c__para{
+        right: 20%;
+        bottom: -52%;
+    }
+
+    #c__module{
+        height: 110vh;
+    }
+
+    #c__portrait{
+        height:30%;
+        width: 30%;
+        transition: all 0.3s;
+    }
+
+    .c__contact{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #blob-left-corner{
+        max-width: 560px;
+    }
+    #blob-right-corner{
+        max-width: 560px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 6 (START OF MOBILE)
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 450px) {
+    .header{
+        font-size: 2.0em !important;
+    }
+    .header-light{
+        font-size: 2.0em !important;
+    }
+    .l__falling-jake-hole-element{
+        width: 256px;
+    }
+    .l__hole-wall{
+        width: 300px;
+    }
+    .a__skills-box{
+        min-width: 119px;
+        text-align: center;
+        min-height: 90px;
+    }
+    .a__skills-col.right-col > .a__skills-box{
+        transform: translate(10%,10%);
+    }
+    .a__technical-header{
+        font-size: 1.4em !important;
+        line-height: 1.1em;
+        width: 90%;
+    }
+
+    .a__personal-photo{
+        margin-bottom: 0px;
+        display: none;
+    }
+    .clipped{
+        display: none;
+    }
+    .clipped_mask{
+        scale: 0.8;
+        display: none;
+    }
+
+    .a__spacer{
+        height: 130px;
+    }
+
+    #c__module{
+        height: 100vh;
+    }
+    .c__para{
+        right: 10%;
+        bottom: -35%;
+    }
+    .a__technical{
+        margin-top: 0px;
+    }
+    
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+    BREAK POINT 7 
+--------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 400px) {
+    #c__module{
+        height: 100vh;
+    }
+    .c__para{
+        right: 10%;
+        bottom: -45%;
+    }
+
+    .a__technical{
+        margin-top: 30px;
+    }
+
+    .p__card{
+        width: 125px;
+        min-width: 275px;
+    }
+    .p__card-img{
+        width: 125px;
+        min-width: 275px;
+    }
+
+    .p__card-header{
+        font-size: 1.4em;
+    }
+    
+    .p__card-header.smaller{
+        font-size: 1.4em;
+    }
+    .p__header{
+        padding-left: 20px;
+        font-size: 0.9em !important;
+    }
+    .a__container{
+        padding-left: 20px;
+        font-size: 0.9em !important;
+    }
+    .c__header{
+        padding-left: 20px;
+        font-size: 0.9em !important;
+    }
+    .p__title{
+        padding-left: 20px;
+    }
+    .c__title{
+        padding-left: 20px;
+    }
+    .l__hole-wall{
+        width: 600px !important;
+    }
+    .l__falling-jake-hole-element{
+        width: 180px;
+    }
+}
+
+@media only screen and (max-height: 739px) {
+    .c__para{
+        display: none;
+    }
+}
+
+@media (pointer:none), (pointer:coarse) {
+    #jakes_cursor{
+        display: none;
+    }
+}

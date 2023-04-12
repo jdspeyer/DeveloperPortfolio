@@ -1,0 +1,172 @@
+#l__module{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 2em;
+    flex-direction: column;
+    height: 130vh;
+    background-color: var(--color-background);
+    width: 100vw;
+    overflow: hidden;
+}
+
+#l__overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.l__blob-dark{
+    position: absolute;
+    fill: var(--color-background-darker);
+    transition: transform 0.5s;
+}
+.translate-up-out-left{
+    transform: translate(-100vw, -100vh) !important;
+}
+.translate-up-out-right{
+    transform: translate(100vw, -100vh) !important;
+}
+.l__blob-dark.blob-1{
+    left: -8%;
+    top: -5%;
+    transform: rotate(10deg)
+}
+.l__blob-dark.blob-2{
+    right: -8%;
+    top: -5%;
+    transform: scaleX(-1) rotate(10deg);
+}
+
+#l__overlay-icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: opacity 0.5s
+}
+.floating-icon{
+    fill: var(--color-accent) !important;
+    position: absolute;
+    filter: saturate(70%);
+    width: 24px;
+    height: 24px;
+    transform: scale(2.0);
+
+}
+.floating-icon-stroke{
+    stroke: var(--color-accent) !important;
+    position: absolute;
+    filter: saturate(70%);
+    width: 24px;
+    height: 24px;
+    transform: scale(2.0);
+}
+.icon-1{
+    left: 40%;
+    top: 50%;
+}
+.icon-3{
+    left: 18%;
+    top: 60%;
+}
+.icon-5{
+    left: 30%;
+    top: 70%;
+}
+.icon-7{
+    left: 12%;
+    top: 80%;
+}
+.icon-9{
+    left: 25%;
+    top: 90%;
+}
+.icon-2{
+    right: 26%;
+    top: 55%;
+}
+.icon-4{
+    right: 25%;
+    top: 65%;
+}
+.icon-6{
+    right: 17%;
+    top: 73%;
+}
+.icon-8{
+    right: 12%;
+    top: 80%;
+}
+.icon-10{
+    right: 32%;
+    top: 85%;
+}
+
+
+#l__module-content{
+    padding-top: 30vh;
+    height: 100vh;
+}
+
+#l__jake-title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.push-back{
+    position: relative;
+    z-index: 6;
+}
+
+#l__falling-jake{
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#l__falling-jake-image{
+    z-index: 5;
+    position: absolute;
+    top: 35%;
+    max-width: 200px;
+    max-height: 200px;
+    stroke: var(--color-accent) !important;
+    fill: var(--color-background-darker) !important;
+}
+
+#l__falling-jake-hole{
+    z-index: 4;
+    position: absolute;
+    bottom: -7px;
+    transition: transform 0.1s;
+}
+
+#l__falling-jake-image-element{
+    /*max-width: 128px;
+    max-height: 128px;*/
+    max-width: 200px;
+    max-height: 200px;
+    transform: rotate(45deg);
+    stroke: var(--color-accent) !important;
+    fill: var(--color-background-darker) !important;
+}
+
+.l__falling-jake-hole-element{
+    width: 256px;
+}
+
+.l__hole-base{
+    fill: var(--color-background-darker);
+}
+.l__hole-wall{
+    fill: var(--color-background-lighter)
+}

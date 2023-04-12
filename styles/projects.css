@@ -1,0 +1,221 @@
+#p__module{
+    display: flex;
+    /* padding-top: 2em; */
+    padding-bottom: 2em;
+    flex-direction: column;
+    min-height: 500px;
+    background-color: var(--color-background);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.p__title{
+    padding-top: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.p__header{
+    width: 50%;
+    margin-bottom: 3em;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.p__deck{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    min-height: 500px;
+    min-height: 430px;
+    justify-content: center;
+}
+
+.p__card{
+    border: 2px solid transparent;
+    width: 325px;
+    min-width: 325px;
+    height: 500px;
+    min-height: 500px;
+    background-color: var(--color-neutral);
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 20px;
+    position: absolute;
+    transition: transform 0.5s, border 0.2s;
+}
+
+.p__card-img{
+    overflow: hidden;
+    width: 100%;
+    width: 325px;
+    min-width: 325px;
+    height: 250px;
+    min-height: 250px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.p__card-header{
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.p__card-header.smaller{
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.7em;
+    line-height: 1em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.p__card-tags{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.p__card-tag{
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 0.7em;
+    line-height: 0.7em;
+    border: 1px solid;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.p__card-tag.python{
+    color: var(--color-neutral);
+    border-color: seagreen;
+    background-color: seagreen;
+}
+.p__card-tag.javascript{
+    color: var(--color-neutral);
+    border-color: #FFAA67;
+    background-color: #FFAA67;
+}
+.p__card-tag.java{
+    color: var(--color-neutral);
+    border-color: #DA674A;
+    background-color: #DA674A;
+}
+.p__card-tag.aws{
+    color: var(--color-neutral);
+    background-color: rebeccapurple;
+    border-color: rebeccapurple;
+}
+.p__card-tag.gcp{
+    color: var(--color-neutral);
+    background-color: indianred;
+    border-color: indianred;
+}
+.p__card-tag.dart{
+    color: var(--color-neutral);
+    background-color: darkslategrey;
+    border-color: darkslategrey;
+}
+.p__card-tag.frontend{
+    color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+.p__card-tag.backend{
+    color: slateblue;
+    border-color: slateblue;
+}
+
+.p__card-nav{
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+    width: calc(100% - 24px);
+
+}
+
+.p__card-nav-button{
+    border: none;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    min-height: 36px;
+}
+
+.p__card-nav-button.source{
+    background-color: var(--color-neutral-dark);
+    color: var(--color-neutral);
+    font-size: 1.1em;
+}
+
+.p__card-nav-button.website{
+    background-color: var(--color-accent);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-neutral);
+    font-weight: 500;
+    font-size: 1.1em;
+    width: 100%;
+    display: block;
+    margin-left: 12px;
+
+}
+
+.p__card-nav-button:hover{
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+.p__card-nav-button.websitefull{
+    background-color: var(--color-accent);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-neutral);
+    font-weight: 500;
+    font-size: 1.1em;
+    width: 100%;
+    display: block;
+}
+
+.p__container-navigation{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p__navigation-button{
+    background-color: var(--color-accent);
+    color: var(--color-neutral);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+.p__navigation-button:hover{
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+.p__navigation-button.right{
+    margin-right: auto;
+    margin-left: 14px;
+}
+
+.p__navigation-button.left{
+    margin-left:auto;
+    margin-right: 14px;
+}
